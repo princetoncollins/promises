@@ -1,0 +1,13 @@
+body {
+	font-family: 'Corbel';
+	display: flex;
+	justify-content: space-around;
+}
+
+.list-item {
+	text-align: center;
+}
+
+.title {
+	text-align: center;
+}

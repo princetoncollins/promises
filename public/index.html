@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="promises">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Promises</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+
+	<body ng-controller="Controller as vm">
+
+
+		<div class="container">
+			<div>
+				<h1 class="title">Callbacks Grocery List</h1>
+			</div>
+
+			<div class="list">
+				<p class="list-item" ng-repeat="item in vm.groceryList">{{item}}</p>
+			</div>
+
+			<input ng-model="item">
+			<button ng-click="vm.modifyList(item, vm.add)">Add Item</button>
+		</div>
+
+		<div class="container">
+			<div>
+				<h1 class="title">Promises Grocery List</h1>
+			</div>
+
+			<div class="list">
+				<p class="list-item" ng-repeat="item in vm.groceryList">{{item}}</p>
+			</div>
+
+			<input ng-model="promiseItem">
+			<button ng-click="vm.promiseAdd(promiseItem)">Add Item</button>
+		</div>
+
+
+
+
+
+
+
+
+		<!-- Angular -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+
+		<!-- App -->
+		<script src="app.module.js"></script>
+		<script src="controller.js"></script>
+		<script src="service.js"></script>
+	</body>
+
+</html>
