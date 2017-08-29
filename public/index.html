@@ -9,33 +9,21 @@
 
 	<body ng-controller="Controller as vm">
 
-
-<!-- 		<div class="container">
-			<div>
-				<h1 class="title">Callbacks Grocery List</h1>
-			</div>
-
-			<div class="list">
-				<p class="list-item" ng-repeat="item in vm.groceryList">{{item}}</p>
-			</div>
-
-			<input ng-model="item">
-			<button ng-click="vm.modifyList(item, vm.add)">Add Item</button>
-		</div> -->
-
-		<div class="container">
-			<div>
-				<h1 class="title">Promises Grocery List</h1>
-			</div>
-
-			<div class="list">
-				<p class="list-item" ng-repeat="item in vm.promiseGroceryList">{{item}}</p>
-			</div>
-
-			<input ng-model="promiseItem">
-			<button ng-click="vm.promiseAdd(promiseItem)">Add Item</button>
+	<div class="container">
+		<h1>Using Regular Ol'Callbacks</h1>
+		<div class="title">
+			<h2 class="error" ng-if="vm.error">{{vm.error}}</h2>
+			<h2>Result: <span class="sum" ng-class="{ 'error': vm.callbackResult === 'NaN' }">{{vm.callbackResult}}</span></h2>
 		</div>
+	</div>
 
+<!-- 	<div class="container">
+		<h1>Using Promises FTW</h1>
+		<div class="title">
+			<h2 class="error" ng-if="vm.error">{{vm.error}}</h2>
+			<h2>Result: <span class="sum">{{vm.promiseResult}}</span></h2>
+		</div>
+	</div> -->
 
 
 

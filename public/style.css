@@ -1,5 +1,5 @@
 body {
-	font-family: 'Corbel';
+	font-family: monospace;
 	display: flex;
 	justify-content: space-around;
 }
@@ -10,4 +10,14 @@ body {
 
 .title {
 	text-align: center;
+}
+
+.sum {
+	color: green;
+	font-size: 25px;
+}
+
+.error {
+	color: red;
+	font-size: 25px;
 }
